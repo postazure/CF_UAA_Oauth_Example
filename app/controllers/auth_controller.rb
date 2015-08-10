@@ -4,6 +4,6 @@ class AuthController < ApplicationController
   end
 
   def callback
-    render json: request.env['omniauth.auth'].to_hash.to_json
+    render json: request.env['omniauth.auth']
   end
 end
